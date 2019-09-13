@@ -4,7 +4,7 @@ from collections import Counter
 
 
 # -------------------------------------------------------------------
-class Document:
+class DocumentMedia:
     """Analyze text data from document
 
     :param text: text to analyze

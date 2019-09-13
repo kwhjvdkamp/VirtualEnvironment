@@ -1,12 +1,12 @@
 from collections import Counter
 
-from first_package.kwhj.social_media import SocialMedia
+from first_package.kwhj.socialmedia import SocialMedia as soc_med
 
 # Tests on SocialMedia object
 # -------------------------------------------------------------------
 # attribute hashtag_counts
 test_post = 'learning #python & #rstats is awesome! thanks @datacamp!'
-sm_post = SocialMedia(test_post)
+sm_post = soc_med(test_post)
 
 def test_social_media_hashtag_counts():
     expected_hashtag_counts = Counter({'#python': 1, '#rstats': 1})

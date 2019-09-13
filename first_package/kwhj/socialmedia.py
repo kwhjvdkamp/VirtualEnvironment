@@ -1,7 +1,7 @@
 from collections import Counter
 
 # parent class
-from .document import Document
+from .documentmedia import DocumentMedia
 
 # -------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ def filter_word_counts(word_counts, first_char):
 # ===================================================================
 
 # inherited class
-class SocialMedia(Document):
+class SocialMedia(DocumentMedia):
     """Analyze text data from social media
     
     :param text: social media text to analyze
@@ -29,7 +29,7 @@ class SocialMedia(Document):
     :ivar mention_counts: Counter object containing counts of @mentions used in text
     """
     def __init__(self, text):
-        Document.__init__(self, text)
+        DocumentMedia.__init__(self, text)
         
         self.hashtag_counts = self._count_hashtags()
         self.mention_counts = self._count_mentions()

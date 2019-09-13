@@ -1,5 +1,5 @@
 # import classes
-from first_package.kwhj.document import Document
+from first_package.kwhj.documentmedia import DocumentMedia
 
 # import package methods
 from first_package.kwhj.utils import we_need_to_talk
@@ -30,7 +30,7 @@ plot_counter(word_count_totals, 10)
 
 # document.py 
 # -------------------------------------------------------------------
-doc = Document('test doc')
+doc = DocumentMedia('test doc')
 print(doc.tokens)
 
 # ===================================================================
