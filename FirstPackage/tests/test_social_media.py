@@ -1,6 +1,6 @@
 from collections import Counter
 
-from kwhj.kwhj_python.social_media import SocialMedia
+from FirstPackage.kwhj_python.social_media import SocialMedia
 
 # Tests on SocialMedia object
 # -------------------------------------------------------------------

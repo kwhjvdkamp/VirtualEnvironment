@@ -1,6 +1,6 @@
 from collections import Counter
 
-from kwhj.kwhj_python.document import Document
+from FirstPackage.kwhj_python.document import Document
 
 # Tests on Document object
 # -------------------------------------------------------------------
