@@ -1,10 +1,10 @@
 # import classes
-from FirstPackage.kwhj_python import Document
+from first_package.kwhj.document import Document
 
 # import package methods
-from FirstPackage.kwhj_python.utils import we_need_to_talk
-from FirstPackage.kwhj_python.utils import sum_counters
-from FirstPackage.kwhj_python.utils import plot_counter
+from first_package.kwhj.utils import we_need_to_talk
+from first_package.kwhj.utils import sum_counters
+from first_package.kwhj.utils import plot_counter
 
 # import external iterables (lists, tuples, dicts)
 from repository_lists import word_counts
