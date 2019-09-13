@@ -1,5 +1,6 @@
 # import classes
-from first_package.kwhj.documentmedia import DocumentMedia
+from first_package.kwhj.documentmedia import DocumentMedia as doc_med
+from first_package.kwhj.socialmedia import SocialMedia as soc_med
 
 # import package methods
 from first_package.kwhj.utils import we_need_to_talk
@@ -28,18 +29,18 @@ plot_counter(word_count_totals, 10)
 # ===================================================================
 
 
-# document.py 
+# documentmedia.py 
 # -------------------------------------------------------------------
-doc = DocumentMedia('test doc')
+doc = doc_med('test doc')
 print(doc.tokens)
 
 # ===================================================================
 
 
-# social_media.py 
+# socialmedia.py 
 # -------------------------------------------------------------------
 # Create a SocialMedia instance with datacamp_tweets
-# dc_tweets = kwhj_python_pck.SocialMedia(text=datacamp_tweets)
+# dc_tweets = soc_med(text=datacamp_tweets)
 
 # ===================================================================
 
