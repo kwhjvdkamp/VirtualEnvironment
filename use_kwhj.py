@@ -14,13 +14,32 @@ from repository_lists import word_counts
 # utils.py - methods
 # -------------------------------------------------------------------
 # # Decide to start seeing other people
-we_need_to_talk(break_up=False)
+break_up = True
+
+we_need_to_talk(break_up)
+
+# ===================================================================
 
 
+# documentmedia.py 
+# -------------------------------------------------------------------
+doc = doc_med('test doc')
+print("Document attribute: ", doc.attribute)
+print("Document prop: text: ", doc.text)
+print("Document prop: tokens: ", doc.tokens)
+# print("Document prop: count_words", doc.count_words)
+
+doc_tokens = iter(doc.tokens)
+print(doc_tokens)
+
+# ===================================================================
+
+
+# utils.py
 # -------------------------------------------------------------------
 # Sum word_counts using sum_counters from text_analyzer
 word_count_totals = sum_counters(word_counts)
-print("word_count_totals: ", word_count_totals)
+# print("word_count_totals: ", word_count_totals)
 
 
 # -------------------------------------------------------------------
@@ -32,7 +51,7 @@ plot_counter(word_count_totals, 10)
 # documentmedia.py 
 # -------------------------------------------------------------------
 doc = doc_med('test doc')
-print(doc.tokens)
+print("Document: ", doc.tokens, doc.attribute)
 
 # ===================================================================
 

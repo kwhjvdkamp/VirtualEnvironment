@@ -20,9 +20,9 @@ def plot_counter_most_common(top_items):
 def we_need_to_talk(break_up=False):
     """Helper for communicating with significant other"""
     if break_up:
-        print("It's not you, it's me...")
+        print("It's not you, it's me...", break_up)
     else:
-        print('I <3 U!')
+        print('I <3 U!', break_up)
 
 # ===================================================================
 
@@ -41,6 +41,9 @@ def plot_counter(counter, n_most_common=5):
 # -------------------------------------------------------------------
 def sum_counters(counters):
     # Sum the inputted counters
-    return sum(counters, Counter())
+    # print("Counters: ", counters)
+    summed_counters = sum(counters, Counter())
+    # print("summed_counters: ", summed_counters)
+    return summed_counters
 
 # ===================================================================
