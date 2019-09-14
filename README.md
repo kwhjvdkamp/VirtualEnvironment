@@ -21,6 +21,13 @@ FIX: create a pytest.ini file in the root of the project
 Unknown pytest.mark.acceptance - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
     PytestUnknownMarkWarning,
 
-FIX: 
+Workaround:
+Add to pytest.ini
+[pytest]
+markers =
+    PytestUnknownMarkWarning  (no colon and/or subsequent message)
+>> when using 
+  $ pytest >>>> the warning stay away however using 
+  $ python -m pytest >>>>> not!
 ======================================================================================
 

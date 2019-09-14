@@ -1,6 +1,6 @@
 from collections import Counter
 
-from first_package.kwhj.socialmedia import SocialMedia as soc_med
+from first_package.src.socialmedia import SocialMedia as soc_med
 
 # Tests on SocialMedia object
 # -------------------------------------------------------------------

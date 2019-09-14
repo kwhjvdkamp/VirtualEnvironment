@@ -1,6 +1,6 @@
 from collections import Counter
 
-from first_package.kwhj.documentmedia import DocumentMedia as doc_med
+from first_package.src.documentmedia import DocumentMedia as doc_med
 
 # Tests on Document object
 # -------------------------------------------------------------------
