@@ -22,6 +22,7 @@ class DocumentMedia:
         self.tokens = self._tokenize()
         self.word_counts = self._count_words()
 
+    # Non-public method 
     def _tokenize(self):
         return tokenize(self.text)
 	

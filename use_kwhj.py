@@ -24,13 +24,22 @@ we_need_to_talk(break_up)
 # documentmedia.py 
 # -------------------------------------------------------------------
 doc = doc_med('test doc')
+
 print("Document attribute: ", doc.attribute)
+
 print("Document prop: text: ", doc.text)
-print("Document prop: tokens: ", doc.tokens)
-# print("Document prop: count_words", doc.count_words)
+print("Document prop: tokens: ", list(doc.tokens))
+print("Document prop: count_words: ", doc.word_counts)
+# OUTPUT: 
+# Document prop: count_words: 
+# Counter({ 
+#    Tok(kind=11001, txt=None, val=(0, None)): 1, 
+#    Tok(kind=6, txt='test', val=None): 1, 
+#    Tok(kind=6, txt='doc', val=None): 1, 
+#    Tok(kind=11002, txt=None, val=None): 1})
 
 doc_tokens = iter(doc.tokens)
-print(doc_tokens)
+print(next(doc_tokens))
 
 # ===================================================================
 
