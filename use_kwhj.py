@@ -1,11 +1,11 @@
 # import classes
-from first_package.src.documentmedia import DocumentMedia as doc_med
-from first_package.src.socialmedia import SocialMedia as soc_med
+from firstpackage.src.documentmedia import DocumentMedia as doc_med
+from firstpackage.src.socialmedia import SocialMedia as soc_med
 
 # import package methods
-from first_package.src.utils import we_need_to_talk
-from first_package.src.utils import sum_counters
-from first_package.src.utils import plot_counter
+from firstpackage.src.utils import we_need_to_talk
+from firstpackage.src.utils import sum_counters
+from firstpackage.src.utils import plot_counter
 
 # import external iterables (lists, tuples, dicts)
 from repository_lists import word_counts
