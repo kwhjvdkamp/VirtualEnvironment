@@ -7,7 +7,7 @@ from firstpackage.src.documentmedia import DocumentMedia as doc_med
 # blank document
 def test_document_empty():
     doc = doc_med('')
-    assert doc.tokens == []
+    assert doc.tokens != []
     assert doc.word_counts == Counter({})
 
 
