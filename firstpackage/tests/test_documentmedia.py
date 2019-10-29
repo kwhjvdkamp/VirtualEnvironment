@@ -2,7 +2,6 @@ from collections import Counter
 
 from firstpackage.src.documentmedia import DocumentMedia as doc_med
 
-<<<<<<< HEAD
 # Tests on Document object
 # -------------------------------------------------------------------
 # blank document
@@ -10,21 +9,6 @@ def test_document_empty():
     doc = doc_med('')
     assert doc.tokens != []
     assert doc.word_counts == Counter({})
-=======
-# # Tests on Document object
-# # -------------------------------------------------------------------
-# # blank document
-# def test_document_empty():
-#     doc = doc_med('')
-#     assert doc.tokens != []  # Test Pass
-#       assert doc.tokens == []  # Test Fails, because
-#       # checking an empty document delivers a generator object (doc.tokens) 
-#       # which itself apparently is an empty 'box' (if I may say so) 
-#       # which is not equal to an empyt list
-#       # Whats the purpose of this test?
-#     assert doc.word_counts == Counter({}) # Test Pass, 
-#       # seems obvious, no word counted compared to the Counter-object which is empty
->>>>>>> fa56156a17cc5135c76b5778028773a87b4e47be
 
 # def test_document_empty():
 #     doc = doc_med('')
