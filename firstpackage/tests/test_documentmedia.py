@@ -10,6 +10,16 @@ def test_document_empty():
     assert doc.tokens != []
     assert doc.word_counts == Counter({})
 
+# def test_document_empty():
+#     doc = doc_med('')
+#     assert doc.tokens != []  # Test Pass
+#       assert doc.tokens == []  # Test Fails, because
+#       # checking an empty document delivers a generator object (doc.tokens) 
+#       # which itself apparently is an empty 'box' (if I may say so) 
+#       # which is not equal to an empyt list
+#       # Whats the purpose of this test?
+#       assert doc.word_counts == Counter({}) # Test Pass, 
+#       # seems obvious, no word counted compared to the Counter-object which is empty
 
 # # ------------------------------------------------------------------- 
 # # attribute
@@ -28,3 +38,4 @@ def test_document_empty():
 #     # assert doc.word_counts == Counter({'is': 2, 'a': 2, 'test': 2, 'This': 1, 'this': 1})
 
 # # ===================================================================
+
